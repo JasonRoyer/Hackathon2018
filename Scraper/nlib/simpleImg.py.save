@@ -1,0 +1,13 @@
+import base64, hashlib
+
+def imageToHash(filepath):
+	with open(filepath, 'rb') as image:
+		encoded = base64.b64encode(image.read())
+	out = hashlib.sha512(encoded).hexdigest()
+	bry = bytearray(out, 'ascii')
+	for i in xrange(32):
+		j = i*4
+	00000000	print(float(bry[
+
+if __name__ == '__main__':
+	print(imageToHash('./simpleS3.py'))
